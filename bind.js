@@ -25,6 +25,7 @@ const TypeInt="int"
 
 function NewEntity(name,tableName,fields,
                    toItems, toKey,toUnify,
+                   toHashTableKey,toHashTableValue,
                    whereForLookup,whereForUnique,whereForContents,
                    allowMultipleConfirm){
     return {
@@ -38,6 +39,8 @@ function NewEntity(name,tableName,fields,
         WhereForContents:whereForContents,
         ToUnify:toUnify,
         AllowMultipleConfirm:allowMultipleConfirm,
+        ToHashTableKey:toHashTableKey,
+        ToHashTableValue:toHashTableValue,
     }
 }
 
