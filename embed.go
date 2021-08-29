@@ -2,16 +2,13 @@ package gormja_common
 
 import (
 	_ "embed"
-	"reflect"
 )
 
 //go:embed bind.js
-var BindJS = defaultValue
-
-const defaultValue = "stub"
+var BindJS string
 
 func GetBindJS() string {
-	if reflect.DeepEqual(BindJS, defaultValue) {
+	if BindJS == "" {
 		panic("invalid bind js")
 	}
 	return BindJS
