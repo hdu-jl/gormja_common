@@ -22,6 +22,7 @@ function Field(visibleName,dbName,type,primaryKey,index,toKey){
 
 const TypeString="string"
 const TypeInt="int"
+const TypeBlob="blob"
 
 function NewEntity(name,tableName,fields,
                    toItems, toKey,toUnify,
