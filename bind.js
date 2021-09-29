@@ -5,6 +5,8 @@ var OutputName=function () {
 const UsageInSchool="inSchool"
 const UsageUnify="unify"
 
+const DataSourceUnify="unifyDataSource"
+
 var DeclareEntity=function (usage,dataSourceName,v) {
     throw "stub";
 }
