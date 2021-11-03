@@ -5,8 +5,6 @@ var OutputName=function () {
 const UsageInSchool="inSchool"
 const UsageUnify="unify"
 
-const DataSourceUnify="unifyDataSource"
-
 var DeclareEntity=function (usage,dataSourceName,v) {
     throw "stub";
 }
@@ -60,16 +58,4 @@ function NewWhere(query,values){
 
 function SaveToDB(entityName,x){
     return "stub";
-}
-
-function NewDataSource(dataSourceName,dataSourceType,dsn){
-    return {
-        Name:dataSourceName,
-        Type:dataSourceType,
-        DSN:dsn,
-    }
-}
-
-var DeclareDataSource=function (usage,v){
-    throw "stub";
 }
